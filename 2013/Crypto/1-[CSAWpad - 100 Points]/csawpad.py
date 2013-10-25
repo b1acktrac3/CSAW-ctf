@@ -22,6 +22,7 @@ def genTables(seed="Well one day i'll be a big boy just like manhell"):
         unused=range(256)
         for toUpdate in xrange(256):
             i+=1
+            print ord(cSeed[toUpdate])
             curInd=ord(cSeed[toUpdate])%len(unused)
             toDo=unused[curInd]
             del unused[curInd]
